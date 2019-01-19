@@ -1,0 +1,12 @@
+import short_url
+
+id = 20  # your object id
+domain = 'mytiny.domain' 
+
+shortened_url = "http://{}/{}".format(
+                                     domain,
+                                     short_url.encode_url(id)
+                               )
+							   
+
+decoded_id = short_url.decode_url(param)
